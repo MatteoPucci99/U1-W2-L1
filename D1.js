@@ -36,7 +36,8 @@ let x = "12";
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
-/* name='Pucci' ; se cercassi di riassegnare un valore ad una variabile const, mi basterebbe fare una verifica attraverso console.log(nomevariabile). In console comparrebbe un errore. */
+name = "Pucci";
+/*se cercassi di riassegnare un valore ad una variabile const, mi basterebbe fare una verifica attraverso console.log(nomevariabile). In console comparrebbe un errore. */
 const variable = "ciao";
 // variable='hello'
 
@@ -59,3 +60,7 @@ console.log(name1 === name2);
 
 let name2New = name2.toLowerCase();
 console.log(name1 === name2New);
+
+// oppure meglio, più diretto e veloce.
+
+console.log(name1 === name2.toLowerCase);
